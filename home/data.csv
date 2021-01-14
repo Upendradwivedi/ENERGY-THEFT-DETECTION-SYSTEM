@@ -1,0 +1,14 @@
+,suspect,prediction,user,address,meter,actual
+0,user is a suspect,784.5797676789521,Aditya Singh,"Shimal,Himachal Pradesh",5634,123
+1,user is a suspect,784.5797676789521,Ghanshaym Shukla,"Shimal,Himachal Pradesh",11904,380
+2,user is a suspect,784.5797676789521,Prakhar Pratyush,"Chapra,Bihar",16723,160
+3,user is a suspect,784.5797676789521,Ritwik Kumar,"Shimal,Himachal Pradesh",23456,780.24
+4,user is a suspect,824.5797676789521,Atharv Sood,"Shimal,Himachal Pradesh",12345,390
+5,user is a suspect,824.5797676789521,Yojan Sharma,"Jaipur,Rajasthan",194523,120
+6,user is a suspect,874.5797676789521,Vivek Kumar,"Begusarai,Bihar",23455,456
+7,user is not a suspect,324.5797676789521,Saksham Sayal,"Shimal,Himachal Pradesh",3456,234
+8,user is not a suspect,424.5797676789521,Yamini Sharma,"Shimla,Himachal Pradesh",192006,670
+9,user is not a suspect,597.6778708023108,Upendra Dwivedi,"Kanpur,Uttar Pradesh",192056,130
+10,user is not a suspect,601.6852389632056,Kunal Thakur,"Hamirpur,Himachal Pradesh",192040,230
+11,user is not a suspect,624.5797676789521,Nehal Singhal,"Gajhiabad,Delhi",11111,100
+12,user is not a suspect,724.5797676789521,Yugank Sharma,"Shimal,Himachal Pradesh",56789,190
