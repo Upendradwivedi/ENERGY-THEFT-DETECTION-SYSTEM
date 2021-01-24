@@ -16,15 +16,6 @@ dp = ['Kunal Thakur','Upendra Dwivedi','Yamini Sharma','Yojan Sharma','Atharv So
 kp = ['Hamirpur,Himachal Pradesh','Kanpur,Uttar Pradesh','Shimla,Himachal Pradesh','Jaipur,Rajasthan','Shimal,Himachal Pradesh','Shimal,Himachal Pradesh','Gajhiabad,Delhi','Shimal,Himachal Pradesh','Begusarai,Bihar','Chapra,Bihar','Shimal,Himachal Pradesh','Shimal,Himachal Pradesh','Shimal,Himachal Pradesh']
 met = ['192040','192056','192006',"194523",'12345','56789','11111','3456','23455','16723','11904','23456','5634']
 act = ['230','130','670','120','390','190','100','234','456','160','380','780.24','123']
-BILL['BILL5'] = list(range(650,1150,5))
-BILL['BILL6'] = list(range(550,1050,5))
-BILL['BILL7'] = list(range(450,950,5))
-BILL['BILL8'] = list(range(150,650,5))
-BILL['BILL9'] = list(range(700,1200,5))
-BILL['BILL10'] = list(range(610,1110,5))
-BILL['BILL11'] = list(range(610,1110,5))
-BILL['BILL12'] = list(range(610,1110,5))
-BILL['BILL13'] = list(range(610,1110,5))
 BILL.to_csv('home/billtest.csv')
 da = pd.read_csv('home/data.csv',index_col=0)
 for m in range(len(lis)):

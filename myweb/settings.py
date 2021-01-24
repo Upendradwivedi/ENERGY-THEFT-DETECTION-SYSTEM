@@ -16,7 +16,6 @@ import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 # Activate Django-Heroku.
-django_heroku.settings(locals())
 
 
 # Quick-start development settings - unsuitable for production
@@ -28,7 +27,7 @@ import os
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '#0jlexemzlsv-1yd+kk*)%ic6cm%-8d1mzaqj%1ydft57a7j2m')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['theft-liv.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['theft.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -45,7 +44,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -120,11 +118,11 @@ USE_L10N = True
 USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-STATIC_ROOT = "/var/www/example.com/static/"
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_ROOT = "/static/"
 STATIC_URL =  '/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 
 ]
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
