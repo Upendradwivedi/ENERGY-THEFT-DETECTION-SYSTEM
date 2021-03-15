@@ -26,8 +26,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 import os
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '#0jlexemzlsv-1yd+kk*)%ic6cm%-8d1mzaqj%1ydft57a7j2m')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-ALLOWED_HOSTS = ['theft.herokuapp.com','127.0.0.1']
+DEBUG = True
+ALLOWED_HOSTS = []
 
 
 # Application definition
