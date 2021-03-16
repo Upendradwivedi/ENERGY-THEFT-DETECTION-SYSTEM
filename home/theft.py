@@ -5,6 +5,7 @@ import calendar
 from sklearn.linear_model import LinearRegression 
 import numpy as np
 import random
+from bs4 import BeautifulSoup
 
 
 BILL = pd.read_csv('home/billtest.csv',index_col=0)
@@ -13,7 +14,7 @@ lis = ['BILL1','BILL2','BILL3','BILL4','BILL5','BILL6','BILL7','BILL8','BILL9','
 OP=[]
 CP=[]
 dp = ['Kunal Thakur','Upendra Dwivedi','Yamini Sharma','Yojan Sharma','Atharv Sood','Yugank Sharma','Nehal Singhal','Saksham Sayal','Vivek Kumar','Prakhar Pratyush','Ghanshaym Shukla','Ritwik Kumar','Aditya Singh']
-kp = ['Hamirpur,Himachal Pradesh','Kanpur,Uttar Pradesh','Shimla,Himachal Pradesh','Jaipur,Rajasthan','Shimal,Himachal Pradesh','Shimal,Himachal Pradesh','Gajhiabad,Delhi','Shimal,Himachal Pradesh','Begusarai,Bihar','Chapra,Bihar','Shimal,Himachal Pradesh','Shimal,Himachal Pradesh','Shimal,Himachal Pradesh']
+kp = ['Hamirpur,Himachal Pradesh','Kanpur,Uttar Pradesh','Shimla,Himachal Pradesh','Jaipur,Rajasthan','Shimla,Himachal Pradesh','Shimla,Himachal Pradesh','Ghaziabad,Uttar Pradesh','Shimla,Himachal Pradesh','Begusarai,Bihar','Chapra,Bihar','Shimla,Himachal Pradesh','Shimla,Himachal Pradesh','Shimla,Himachal Pradesh']
 met = ['192040','192056','192006',"194523",'12345','56789','11111','3456','23455','16723','11904','23456','5634']
 act = ['230','130','670','120','390','190','100','234','456','160','380','780.24','123']
 BILL.to_csv('home/billtest.csv')
@@ -110,10 +111,10 @@ def sus():
    
 except:
     print("Pls enter the month number for example 1 for january")
-"""
+
 
 #inserting a column 'Threshold'
-"""lis1 = []
+lis1 = []
 for i in mon:
     l = [j for j in da['BILL1'].values if j < prd_bill['BILL'].values[i-1]]
     a = np.std(l)
@@ -132,12 +133,12 @@ prd_bill.to_csv('home/predicted.csv')
 #GETTING A SUSPECT
 #IF A USER ACTUAL BILL IS BELOW THE THRESHOLD FOR MORE THAN 4 TIMES THEN HE MAY BE A SUSPECT
 if prd_bill['Suspect'].values.sum() >= 4: #adding up the suspect column
-    print("User may be a suspect")
+    print("User may be a suspect")"""
 #ploting the graph
-draw.figure(figsize=(14,4))
-draw.plot(x, regression.predict(x),color='red',linewidth=4)"""
+"""draw.figure(figsize=(14,4))
+draw.plot(x, regression.predict(x),color='red',linewidth=4)
 
-"""draw.title('Month vs Electricty Bill')
+draw.title('Month vs Electricty Bill')
 draw.xlabel('Month')
 draw.ylabel('Cost in rupees')
 draw.xlim(0,13)
