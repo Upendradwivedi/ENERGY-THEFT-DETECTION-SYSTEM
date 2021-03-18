@@ -7,15 +7,6 @@ import numpy as np
 import random
 from bs4 import BeautifulSoup
 import requests
-url = "https://www.internasia.com/"
-r = requests.get(url)
-htmlcontent = r.content
-#print(htmlcontent)
-soup = BeautifulSoup(htmlcontent,"html.parser")
-#print(soup.prettify)
-title = soup.title
-paras = soup.find("p")
-print(paras.get_text())
 
 BILL = pd.read_csv('home/billtest.csv',index_col=0)
 BILL.to_csv('home/billtest.csv')
