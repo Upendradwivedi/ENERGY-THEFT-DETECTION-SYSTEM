@@ -1,1 +1,1 @@
-web: python home.py runserver 0.0.0.0:$PORT
+web: gunicorn myweb.wgsi
