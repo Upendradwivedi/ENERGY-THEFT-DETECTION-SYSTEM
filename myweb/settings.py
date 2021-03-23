@@ -26,8 +26,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 import os
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '#0jlexemzlsv-1yd+kk*)%ic6cm%-8d1mzaqj%1ydft57a7j2m')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-ALLOWED_HOSTS = []
+DEBUG = False
+ALLOWED_HOSTS = ["theft9898.herokuapp.com"]
 
 
 # Application definition
@@ -125,4 +125,5 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
 
 ]
+django_heroku.settings(locals())
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
