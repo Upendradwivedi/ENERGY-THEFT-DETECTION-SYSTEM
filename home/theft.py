@@ -17,6 +17,7 @@ dp = ['Kunal Thakur','Upendra Dwivedi','Yamini Sharma','Yojan Sharma','Atharv So
 kp = ['Hamirpur,Himachal Pradesh','Kanpur,Uttar Pradesh','Shimla,Himachal Pradesh','Jaipur,Rajasthan','Shimla,Himachal Pradesh','Shimla,Himachal Pradesh','Ghaziabad,Uttar Pradesh','Shimla,Himachal Pradesh','Begusarai,Bihar','Chapra,Bihar','Shimla,Himachal Pradesh','Shimla,Himachal Pradesh','Shimla,Himachal Pradesh']
 met = ['192040','192056','192006',"194523",'12345','56789','11111','3456','23455','16723','11904','23456','5634']
 act = ['230','130','670','120','390','190','100','234','456','160','380','780.24','123']
+email = ['kt192@gmail.com','dwivediupendra0509@gmail.com','yamini1243@gmail.com','yojans@gmail.com','soodatharv@gmail.com','yugisharma@gmail.com','nehal1902@gmail.com','saksham@gmail.com','vivu69@gmail.com','prakharp@gmail.com','ghanshyam@gmail.com','ritw1234@gmail.com','adi543@gmail.com']
 BILL.to_csv('home/billtest.csv')
 da = pd.read_csv('home/data.csv',index_col=0)
 for m in range(len(lis)):
@@ -71,18 +72,18 @@ for m in range(len(lis)):
     else:
         CP.append('user is not a suspect')
 # threshold  prediction
-kt = ['suspect','prediction','user','address','meter','actual']
+kt = ['suspect','prediction','user','address','meter','actual','email']
 gp = []
 for i in range(len(dp)):
-    gp.append([CP[i],OP[i],dp[i],kp[i],met[i],act[i]])
+    gp.append([CP[i],OP[i],dp[i],kp[i],met[i],act[i],email[i]])
 gp = sorted(gp)
 
-for i in range(6):
+for i in range(7):
     que = []
     for j in range(len(dp)):
         que.append(gp[j][i])
     da[kt[i]] = que
-for i in range(3,6):
+for i in range(3,7):
     que=[]
     if kt[i] == 'address':
         for j in range(len(dp)):
